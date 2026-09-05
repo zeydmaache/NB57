@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(kill 925)",
+      "Bash(pkill -f \"http.server 4601\")"
+    ]
+  }
+}

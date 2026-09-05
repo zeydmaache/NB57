@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="NightBurger — nighttime burger delivery">
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05030F"/>
+      <stop offset="1" stop-color="#1A0B33"/>
+    </linearGradient>
+    <linearGradient id="ogn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2DA6"/><stop offset="0.5" stop-color="#8B3DFF"/><stop offset="1" stop-color="#216CFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og)"/>
+  <ellipse cx="600" cy="360" rx="520" ry="260" fill="#8B3DFF" opacity="0.14"/>
+  <g transform="translate(120 12)">
+    <path fill="#FF2DA6" d="M64 40a40 40 0 1 0 24 72A32 32 0 0 1 64 40z"/>
+  </g>
+  <text x="120" y="300" font-family="'Bebas Neue',Oswald,sans-serif" font-size="150" letter-spacing="4" fill="#FFFFFF">BURGERS. AT NIGHT.</text>
+  <text x="120" y="410" font-family="'Bebas Neue',Oswald,sans-serif" font-size="150" letter-spacing="4" fill="url(#ogn)">DELIVERED.</text>
+  <text x="122" y="470" font-family="Inter,system-ui,sans-serif" font-size="26" fill="#C7C7D1">Nighttime burger delivery · Open every night 10 PM – 4 AM</text>
+  <rect x="120" y="520" width="360" height="6" rx="3" fill="url(#ogn)"/>
+</svg>

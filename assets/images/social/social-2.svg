@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" role="img" aria-label="Social video placeholder: building the After Hours Double">
+  <defs>
+    <linearGradient id="s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1030"/>
+      <stop offset="1" stop-color="#03030A"/>
+    </linearGradient>
+    <linearGradient id="s2n" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#216CFF"/><stop offset="1" stop-color="#00D9FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="640" fill="url(#s2)"/>
+  <g transform="translate(180 300)" fill="none" stroke="url(#s2n)" stroke-width="5" stroke-linecap="round">
+    <path d="M-70 -20c0-24 32-40 70-40s70 16 70 40"/>
+    <line x1="-78" y1="4" x2="78" y2="4"/>
+    <line x1="-78" y1="28" x2="78" y2="28"/>
+    <path d="M-70 52c0 20 26 34 70 34s70-14 70-34"/>
+  </g>
+  <circle cx="180" cy="300" r="96" fill="none" stroke="url(#s2n)" stroke-width="3" opacity="0.5"/>
+  <path d="M165 268 l45 32 l-45 32 z" fill="#FFFFFF"/>
+  <text x="30" y="560" fill="#FFFFFF" font-family="'Bebas Neue',Oswald,sans-serif" font-size="30" letter-spacing="2">AFTER HOURS DOUBLE</text>
+  <text x="30" y="588" fill="#C7C7D1" font-family="Inter,system-ui,sans-serif" font-size="13">Kitchen cam · @nightburger</text>
+</svg>

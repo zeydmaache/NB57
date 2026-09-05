@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" role="img" aria-label="Social video placeholder: Friday night rush">
+  <defs>
+    <linearGradient id="s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A0B33"/>
+      <stop offset="1" stop-color="#03030A"/>
+    </linearGradient>
+    <linearGradient id="s1n" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2DA6"/><stop offset="1" stop-color="#8B3DFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="640" fill="url(#s1)"/>
+  <g opacity="0.35" fill="none" stroke="url(#s1n)" stroke-width="2">
+    <rect x="40" y="120" width="60" height="180"/><rect x="120" y="80" width="50" height="220"/>
+    <rect x="200" y="150" width="70" height="150"/><rect x="285" y="110" width="45" height="190"/>
+  </g>
+  <circle cx="180" cy="330" r="70" fill="none" stroke="url(#s1n)" stroke-width="4" opacity="0.8"/>
+  <path d="M165 300 l45 30 l-45 30 z" fill="#FFFFFF"/>
+  <text x="30" y="560" fill="#FFFFFF" font-family="'Bebas Neue',Oswald,sans-serif" font-size="30" letter-spacing="2">FRIDAY NIGHT RUSH</text>
+  <text x="30" y="588" fill="#C7C7D1" font-family="Inter,system-ui,sans-serif" font-size="13">Metz Centre · @nightburger</text>
+</svg>

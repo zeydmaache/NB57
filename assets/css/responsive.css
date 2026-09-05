@@ -1,0 +1,127 @@
+/* ==========================================================================
+   NIGHTBURGER — RESPONSIVE
+   Mobile-first base lives in the other files. This file only holds the
+   breakpoint *overrides* that change layout at wider viewports.
+   Breakpoints: 640 / 768 / 1024 / 1280
+   ========================================================================== */
+
+/* ==========================================================================
+   >= 640px  (large phones / small tablets)
+   ========================================================================== */
+@media (min-width: 640px) {
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .order-channels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__actions .btn {
+    min-width: 200px;
+  }
+}
+
+/* ==========================================================================
+   >= 768px  (tablet)
+   ========================================================================== */
+@media (min-width: 768px) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  }
+
+  .order-step {
+    grid-template-columns: 5rem 1fr;
+    gap: var(--space-lg);
+  }
+
+  .order-step__num {
+    font-size: 3.25rem;
+  }
+}
+
+/* ==========================================================================
+   >= 1024px  (desktop — nav switches to inline)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  :root {
+    --header-height: 84px;
+  }
+
+  /* Header: show inline nav + CTA, hide hamburger */
+  .site-nav {
+    display: block;
+  }
+
+  .site-header__actions .btn--primary {
+    display: inline-flex;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* Home hero: text left, van right */
+  .hero__grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: var(--space-2xl);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Delivery zones: list left, map right */
+  .zones__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .social__grid {
+    gap: var(--space-lg);
+  }
+
+  .order-channels {
+    gap: var(--space-xl);
+  }
+}
+
+/* ==========================================================================
+   >= 1280px  (wide desktop)
+   ========================================================================== */
+@media (min-width: 1280px) {
+  .hero {
+    padding-top: calc(var(--header-height) + var(--space-3xl));
+  }
+
+  .hero__grid {
+    gap: var(--space-3xl);
+  }
+}
+
+/* ==========================================================================
+   Fine pointer: enable richer hover lift only where it makes sense
+   ========================================================================== */
+@media (hover: none) {
+  .card--interactive:hover {
+    transform: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+}

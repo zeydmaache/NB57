@@ -1,0 +1,82 @@
+<!--
+  REFERENCE ONLY — component gallery / cheat-sheet.
+
+  Nothing here is loaded by the site. Every block below is produced at
+  runtime by a factory function in assets/js/components.js. Use this file
+  to see the class names and expected markup for each reusable component.
+
+  Factory map (assets/js/components.js -> window.NBUI):
+    NBUI.Button(props)        -> .btn
+    NBUI.Badge(text, type)    -> .badge
+    NBUI.StatusBadge(status)  -> .badge--status
+    NBUI.SectionHead(opts)    -> .section__head
+    NBUI.ProductCard(product) -> .card.card--burger   (alias: NBUI.BurgerCard)
+    NBUI.StepCard(step)       -> .card.card--step
+    NBUI.ZoneCard(zone)       -> .card.card--zone
+    NBUI.SocialCard(post)     -> .card.card--social
+    NBUI.Logo(opts)           -> .brand
+    NBUI.Header() / Footer()  -> full landmarks (see header.html / footer.html)
+    NBUI.icon(name)           -> .icon backed by assets/icons/<name>.svg
+    NBUI.mount(root)          -> swaps every [data-component] placeholder
+-->
+
+<!-- ========== BUTTONS ========== -->
+<button class="btn btn--primary">Order now <span class="icon icon--arrow-right"></span></button>
+<button class="btn btn--secondary">View menu</button>
+<button class="btn btn--ghost">Ghost</button>
+<button class="btn btn--danger">Danger</button>
+<!-- sizes: add .btn--sm / .btn--lg ; full width: .btn--block -->
+
+<!-- ========== BADGES ========== -->
+<span class="badge badge--hot">Best seller</span>
+<span class="badge badge--new">New</span>
+<span class="badge badge--veggie">Veggie</span>
+<span class="badge badge--status badge--available"><span class="badge__dot"></span>Available</span>
+<span class="badge badge--status badge--soon"><span class="badge__dot"></span>Coming soon</span>
+
+<!-- ========== SECTION HEAD ========== -->
+<div class="section__head">
+  <p class="section__eyebrow">Eyebrow</p>
+  <h2 class="section__title">Section title</h2>
+  <p class="section__subtitle">Optional supporting sentence.</p>
+</div>
+
+<!-- ========== BURGER / PRODUCT CARD ========== -->
+<article class="card card--burger card--interactive" data-category="burgers">
+  <div class="card__media">
+    <img class="card__img" src="assets/images/burgers/night-classic.svg" alt="Night Classic" />
+    <div class="card__badges"><span class="badge badge--hot">Best seller</span></div>
+  </div>
+  <div class="card__body">
+    <h3 class="card__title">Night Classic</h3>
+    <p class="card__desc">Smashed beef, aged cheddar, crisp lettuce and homemade night sauce.</p>
+    <div class="card__footer">
+      <span class="card__price">12.90 €</span>
+      <a class="btn btn--secondary btn--sm" href="#">Order now <span class="icon icon--arrow-right"></span></a>
+    </div>
+  </div>
+</article>
+
+<!-- ========== STEP CARD ========== -->
+<article class="card card--step">
+  <span class="card__index">01</span>
+  <span class="card__icon" role="img" aria-label="Enter your address">📍</span>
+  <h3 class="card__title">Enter your address</h3>
+  <p class="card__desc">Send us your delivery address.</p>
+</article>
+
+<!-- ========== ZONE CARD ========== -->
+<article class="card card--zone">
+  <span class="card__title">Metz Centre</span>
+  <span class="badge badge--status badge--available"><span class="badge__dot"></span>Available</span>
+</article>
+
+<!-- ========== SOCIAL CARD ========== -->
+<a class="card card--social card--interactive" href="#" target="_blank" rel="noopener">
+  <img class="card__img" src="assets/images/social/social-1.svg" alt="Friday night rush" />
+  <span class="card__play" aria-hidden="true"></span>
+  <div class="card__body">
+    <span class="card__platform">Instagram</span>
+    <span class="card__title">Friday night rush in Metz Centre</span>
+  </div>
+</a>

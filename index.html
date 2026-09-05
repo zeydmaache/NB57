@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NightBurger — Nighttime Burger Delivery</title>
+  <meta name="description" content="NightBurger delivers passionately made burgers straight to your door after nightfall. Order now by WhatsApp or phone. Open every night, 10 PM–4 AM." />
+  <link rel="canonical" href="https://nightburger.example/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NightBurger — Nighttime Burger Delivery" />
+  <meta property="og:description" content="Passionately made burgers, delivered straight to your door after nightfall." />
+  <meta property="og:image" content="assets/images/social/og-cover.svg" />
+  <meta property="og:url" content="https://nightburger.example/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles (order matters) -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body data-page="home">
+  <div data-component="header"></div>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="section hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Spécialiste de la livraison de nuit</p>
+          <h1 class="hero__title" id="hero-title">
+            <span>Des burgers.</span>
+            <span> La nuit.</span>
+            <span class="is-accent">Livrés.</span>
+          </h1>
+          <p class="hero__lead">
+            Des burgers préparés avec passion, livrés directement chez vous après la tombée de la nuit.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" data-order-link href="#">
+              <span>Commander maintenant</span>
+              <span class="icon icon--arrow-right" aria-hidden="true"></span>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="menu.html">Voir le menu</a>
+          </div>
+          <ul class="hero__meta">
+            <li>
+              <span class="icon icon--map-pin" aria-hidden="true"></span>
+              Livraison de nuit
+            </li>
+            <li>
+              <span class="icon icon--clock" aria-hidden="true"></span>
+              <span data-opening-label>Overt a partir de </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__media reveal">
+          <img class="hero__van" data-hero-image
+               src="assets/images/hero/nightburger-van.svg"
+               width="800" height="600"
+               alt="The NightBurger delivery van glowing with neon on a night city street" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BEST SELLERS ================= -->
+    <section class="section best-sellers" aria-labelledby="best-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Les incontournables de la nuit</p>
+          <h2 class="section__title" id="best-title">Les burgers que vous commandez le plus</h2>
+          <p class="section__subtitle">Quatre favoris, tout droit sortis de la cuisine de nuit.</p>
+        </div>
+        <div class="grid grid--4" id="best-sellers-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <p class="section__eyebrow">C’est aussi simple que ça</p>
+          <h2 class="section__title" id="how-title">Comment commander ?</h2>
+          <p class="section__subtitle">Trois étapes vous séparent d’un burger..</p>
+        </div>
+        <div class="grid grid--3" id="steps-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= DELIVERY ZONES ================= -->
+    <section class="section zones" aria-labelledby="zones-title">
+      <div class="container zones__inner">
+        <div>
+          <div class="section__head reveal">
+            <p class="section__eyebrow">Zone de livraison</p>
+            <h2 class="section__title" id="zones-title">Où livrons-nous ?</h2>
+            <p class="section__subtitle">
+              Zones de livraison nocturne actives autour de Metz. D’autres quartiers seront bientôt disponibles.
+            </p>
+          </div>
+          <div class="grid" id="zones-grid"></div>
+          <p class="zones__note">Vous ne savez pas si votre adresse est dans notre zone ? Envoyez-la-nous sur WhatsApp et nous vérifierons.</p>
+        </div>
+        <div class="zones__map reveal">
+          <img src="assets/images/delivery/map.svg" loading="lazy"
+               alt="Stylised night map showing NightBurger's delivery area" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOCIAL ================= -->
+    <section class="section social" aria-labelledby="social-title">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <p class="section__eyebrow">@nightburger</p>
+          <h2 class="section__title" id="social-title">La nuit chez NightBurger</h2>
+          <p class="section__subtitle">Services tardifs, rues illuminées au néon et beaucoup de fromage fondant.</p>
+        </div>
+        <div class="social__grid" id="social-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="section final-cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="final-cta__panel reveal">
+          <h2 class="final-cta__title" id="cta-title">Une envie de burger ?</h2>
+          <p class="final-cta__text">Votre nuit commence maintenant.</p>
+          <a class="btn btn--primary btn--lg" data-order-link href="#">
+            <span>Commander maintenant</span>
+            <span class="icon icon--arrow-right" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <!-- Scripts (order matters, no modules so it works from file://) -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

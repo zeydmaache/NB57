@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Order — NightBurger</title>
+  <meta name="description" content="Ordering from NightBurger takes four steps: send your address, choose your products, confirm by WhatsApp or phone, and we deliver to your door after dark." />
+  <link rel="canonical" href="https://nightburger.example/commander.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="How to Order — NightBurger" />
+  <meta property="og:description" content="Four steps between you and a late-night burger. Order by WhatsApp or phone." />
+  <meta property="og:image" content="assets/images/social/og-cover.svg" />
+  <meta property="og:url" content="https://nightburger.example/commander.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/images/logo/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body data-page="order">
+  <div data-component="header"></div>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="order-title">
+      <div class="container container--narrow">
+        <p class="page-hero__eyebrow">Commander</p>
+        <h1 class="page-hero__title" id="order-title">How to order?</h1>
+        <p class="page-hero__lead">Pas d’application, pas de compte et aucun paiement en ligne. Seulement quatre étapes avant d’être livré chez vous.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Ordering steps">
+      <div class="container container--narrow">
+        <ol class="order-steps" id="order-steps"></ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="channels-title">
+      <div class="container container--narrow">
+        <div class="section__head section__head--center reveal">
+          <p class="section__eyebrow">Envoyez votre commande</p>
+          <h2 class="section__title" id="channels-title">Two ways to reach the night crew</h2>
+        </div>
+
+        <div class="order-channels">
+          <article class="card order-channel reveal">
+            <span class="card__icon" aria-hidden="true">
+              <span class="icon icon--whatsapp" aria-hidden="true"></span>
+            </span>
+            <h3>Commander via WhatsApp</h3>
+            <p>Ouvre une discussion avec votre message de commande déjà prêt à être envoyé. C’est la solution la plus rapide aux heures de pointe.</p>
+            <a class="btn btn--primary" data-whatsapp-link href="#">
+              <span>Ouvrir WhatsApp</span>
+              <span class="icon icon--arrow-right" aria-hidden="true"></span>
+            </a>
+          </article>
+
+          <article class="card order-channel reveal">
+            <span class="card__icon" aria-hidden="true">
+              <span class="icon icon--phone" aria-hidden="true"></span>
+            </span>
+            <h3>Order by phone</h3>
+            <p>Vous préférez parler à quelqu’un ? Appelez-nous : nous prendrons votre commande et votre adresse de livraison.</p>
+            <a class="btn btn--secondary" data-phone-link href="#">
+              <span>Appeler  <span data-phone-display>NightBurger</span></span>
+            </a>
+          </article>
+        </div>
+
+        <p class="order-note">
+          Le paiement se fait auprès du livreur à la livraison. NightBurger ne propose ni paiement en ligne, ni compte client, ni application — <span data-opening-label>Ouvert toutes les nuits</span>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

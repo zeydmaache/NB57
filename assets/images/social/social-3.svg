@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" role="img" aria-label="Social image placeholder: 3 AM delivery on neon streets">
+  <defs>
+    <linearGradient id="s3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A0B33"/>
+      <stop offset="1" stop-color="#03030A"/>
+    </linearGradient>
+    <linearGradient id="s3n" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2DA6"/><stop offset="1" stop-color="#FF7A18"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="640" fill="url(#s3)"/>
+  <g fill="#00D9FF" opacity="0.7">
+    <rect x="40" y="200" width="7" height="7"/><rect x="60" y="220" width="7" height="7"/><rect x="300" y="180" width="7" height="7"/><rect x="280" y="240" width="7" height="7"/>
+  </g>
+  <g transform="translate(70 300)" fill="none" stroke="url(#s3n)" stroke-width="5" stroke-linecap="round">
+    <rect x="0" y="30" width="150" height="70" rx="10"/>
+    <path d="M150 45 L185 45 Q195 45 199 56 L207 88 Q208 100 199 100 L150 100 Z"/>
+    <circle cx="38" cy="104" r="16"/>
+    <circle cx="165" cy="104" r="16"/>
+  </g>
+  <text x="30" y="560" fill="#FFFFFF" font-family="'Bebas Neue',Oswald,sans-serif" font-size="30" letter-spacing="2">3 AM · NEON STREETS</text>
+  <text x="30" y="588" fill="#C7C7D1" font-family="Inter,system-ui,sans-serif" font-size="13">On the road · @nightburger</text>
+</svg>
